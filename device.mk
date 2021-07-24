@@ -5,7 +5,7 @@
 #
 
 # Vendor
-$(call inherit-product-if-exists, vendor/motorola/achannel/achannel-vendor.mk)
+$(call inherit-product, vendor/motorola/achannel/achannel-vendor.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
